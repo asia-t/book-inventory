@@ -12,7 +12,7 @@ module.exports = function(stockRepository) {
     app.use(bodyParser.json());
 
     app.get('/', function (req, res) {
-        res.send('Hello World!');
+        res.send('Hello World from pipeline!');
     });
 
     var routes = require('./routes')(stockRepository);
