@@ -5,8 +5,6 @@ var configurator = heroin(process.env.HEROKU_API_TOKEN, {debug: false});
 configurator.export('theonlyrealbookinventory')
     .then((res) => console.log(res));
 
-var domain
-
 function getConfig(domain) {
     return {
         name: domain,
